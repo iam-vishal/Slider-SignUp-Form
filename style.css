@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-image: url(https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    height: 70vh;
+    width: 900px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    gap: 130px;
+    box-shadow: 5px 5px 20px #91919196;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.sign-in, .sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container input{
+    width: 100%;
+    padding: 15px 10px;
+    margin-top: 30px;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.sign-in a{
+    display: inline-block;
+    margin-top: 30px;
+}
+.btn{
+    margin-top: 30px;
+    width: 200px;
+    padding: 10px 30px;
+    font-size: larger;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(17,150,231,1) 0%, rgba(92,18,196,1) 100%);
+    color: white;
+    box-shadow: 5px 5px 10px #94beda;
+}
+
+.overlay{
+    position: absolute;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1552083375-1447ce886485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+    z-index: 2;
+}
+
+.overlay-left-active{
+    position: absolute;
+    left: 50%;
+    transition: 0.6s ease-in-out;
+}
+.overlay-right-active{
+    position: absolute;
+    right: 50%;
+    transition: 0.6s ease-in-out;
+}
